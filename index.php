@@ -13,22 +13,21 @@
 	    <title>Flipmart premium HTML5 & CSS3 Template</title>
 
 	    <!-- Bootstrap Core CSS -->
-	    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/bootstrap.min.css">
 	    
 	    <!-- Customizable CSS -->
-	    <link rel="stylesheet" href="assets/css/main.css">
-	    <link rel="stylesheet" href="assets/css/blue.css">
-	    <link rel="stylesheet" href="assets/css/owl.carousel.css">
-		<link rel="stylesheet" href="assets/css/owl.transitions.css">
-		<link rel="stylesheet" href="assets/css/animate.min.css">
-		<link rel="stylesheet" href="assets/css/rateit.css">
-		<link rel="stylesheet" href="assets/css/bootstrap-select.min.css">
-
+	    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/main.css">
+	    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/blue.css">
+	    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/owl.carousel.css">
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/owl.transitions.css">
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/animate.min.css">
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/rateit.css">
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/bootstrap-select.min.css">
 		
 
 		
 		<!-- Icons/Glyphs -->
-		<link rel="stylesheet" href="assets/css/font-awesome.css">
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/font-awesome.css">
 
         <!-- Fonts --> 
 		<link href='http://fonts.googleapis.com/css?family=Roboto:300,400,500,700' rel='stylesheet' type='text/css'>
@@ -4488,22 +4487,21 @@
 	<!-- For demo purposes – can be removed on production : End -->
 
 	<!-- JavaScripts placed at the end of the document so the pages load faster -->
-	<script src="assets/js/jquery-1.11.1.min.js"></script>
+	<script src="<?php echo get_template_directory_uri(); ?>/assets/js/jquery-1.11.1.min.js"></script>
 	
-	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="<?php echo get_template_directory_uri(); ?>/assets/js/bootstrap.min.js"></script>
 	
-	<script src="assets/js/bootstrap-hover-dropdown.min.js"></script>
-	<script src="assets/js/owl.carousel.min.js"></script>
-	
-	<script src="assets/js/echo.min.js"></script>
-	<script src="assets/js/jquery.easing-1.3.min.js"></script>
-	<script src="assets/js/bootstrap-slider.min.js"></script>
-    <script src="assets/js/jquery.rateit.min.js"></script>
-    <script type="text/javascript" src="assets/js/lightbox.min.js"></script>
-    <script src="assets/js/bootstrap-select.min.js"></script>
-    <script src="assets/js/wow.min.js"></script>
-	<script src="assets/js/scripts.js"></script>
+	<script src="<?php echo get_template_directory_uri(); ?>/assets/js/bootstrap-hover-dropdown.min.js"></script>
+	<script src="<?php echo get_template_directory_uri(); ?>/assets/js/owl.carousel.min.js"></script>
 
+	<script src="<?php echo get_template_directory_uri(); ?>/assets/js/echo.min.js"></script>
+	<script src="<?php echo get_template_directory_uri(); ?>/assets/js/jquery.easing-1.3.min.js"></script>
+	<script src="<?php echo get_template_directory_uri(); ?>/assets/js/bootstrap-slider.min.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/jquery.rateit.min.js"></script>
+    <script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/assets/js/lightbox.min.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/bootstrap-select.min.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/wow.min.js"></script>
+	<script src="<?php echo get_template_directory_uri(); ?>/assets/js/scripts.js"></script>
 
 
 	
