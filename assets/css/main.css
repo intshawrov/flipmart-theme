@@ -8,27 +8,8 @@ License: GNU General Public License v2 or later
 Tags: two-columns, left-sidebar, fixed-layout, responsive-layout, custom-background, custom-colors, custom-header, custom-menu
 Text Domain:  Flipmart
 
-/* TABLE OF CONTENTS
-
-1.   Body
-2.   Layout
-3.   Header
-4.   Side menu
-5.   Slider
-6.   Top Banner Section	
-8.   Home Tabs
-9.   Products Grid 
-10.  Products List
-11.  Latest-Blog
-12.  Sidebar
-13.  Product View
-14.  Footer
-15.  Responsive
-16.  Testimonials
-
-/* */
 /*===================================================================================*/
-/*  Body
+/*  GENERAL
 /*===================================================================================*/
 .green-text {
   color: #abd07e !important;
@@ -118,11 +99,6 @@ img[src="assets/images/blank.gif"] {
 .m-t-10 {
   margin-top: 10px;
 }
-
-/*===================================================================================*/
-/*  Buttons
-/*===================================================================================*/
-
 .btn-uppercase {
   text-transform: uppercase;
 }
@@ -137,13 +113,16 @@ img[src="assets/images/blank.gif"] {
   -o-transition: all 0.2s linear 0s;
   transition: all 0.2s linear 0s;
 }
+
+#hero .btn-primary {background: #ffc53a;}
+
 .btn-primary {
   -webkit-transition: all linear 0.2s;
   -moz-transition: all linear 0.2s;
   -ms-transition: all linear 0.2s;
   -o-transition: all linear 0.2s;
   transition: all linear 0.2s;
-  background: #108bea;
+  background: #66ad44;
   color: #fff;
   border: none;
   font-size: 13px;
@@ -174,11 +153,6 @@ img[src="assets/images/blank.gif"] {
 .btn-primary:focus {
   color: #fff;
 }
-
-
-/*===================================================================================*/
-/*  Layout
-/*===================================================================================*/
 .center-block {
   float: none;
 }
@@ -321,7 +295,7 @@ img[src="assets/images/blank.gif"] {
   margin-bottom: 30px;
 }
 .outer-top-bd {
-  margin-top: 50px;
+  margin-top: 30px;
 }
 .inner-bottom-30 {
   padding-bottom: 30px;
@@ -1093,7 +1067,21 @@ a {
 .terms-conditions-page .contact-form {
   color: #12cca7;
 }
-
+/*===================================================================================*/
+/*  GREEN Color
+/*===================================================================================*/
+/*===================================================================================*/
+/*  RED Color
+/*===================================================================================*/
+/*===================================================================================*/
+/*  BLUE Color
+/*===================================================================================*/
+/*===================================================================================*/
+/*  ORANGE Color
+/*===================================================================================*/
+/*===================================================================================*/
+/*  DARK GREEN Color
+/*===================================================================================*/
 .top-bar {
   padding:0px;
   font-size: 12px;
@@ -1186,12 +1174,7 @@ a {
 .top-bar .cnt-block .list-inline > li .dropdown-menu li a:focus {
   background: rgba(0, 0, 0, 0);
 }
-
-
-/*===================================================================================*/
-/* Header
-/*===================================================================================*/
-header{background:#157ed2}
+header{background:#333333}
 
 .main-header {
   padding:5px 0px 12px 0px;
@@ -1278,11 +1261,11 @@ header{background:#157ed2}
   margin: 0px;
   padding: 12px 19px 12px;
   text-align: center;
-    background-color: #fdd922;
-    border: 1px solid #e0bc27;
+    background-color: #59b210;
+    border: 1px solid #59b210;
 }
 .main-header .top-search-holder .search-area .search-button:after {
-  color: #333;
+  color: #fff;
   content: "\f002";
   font-family: fontawesome;
   font-size: 16px;
@@ -1304,8 +1287,6 @@ header{background:#157ed2}
 
 .top-cart-row .dropdown-cart .lnk-cart {
   padding: 0px;
-      background: #006cb4;
-    border: 1px solid #24609c;
   border-radius: 3px;
   display: inline-block;
   color: #fff;
@@ -1330,16 +1311,16 @@ header{background:#157ed2}
   -webkit-border-radius: 100px;
   -moz-border-radius: 100px;
   border-radius: 100px;
-    height: 18px;
+    height: 22px;
     position: absolute;
-    left: 34px;
-    top: 13px;
-    width: 18px;
-    background: #fdd922;
-    color: #0f6cb2;
+    left: 32px;
+    top: 10px;
+    width: 22px;
+    background: #59b210;
+    color: #fff;
     font-size: 11px;
     text-align: center;
-    line-height: 19px;;
+    line-height: 20px;
 }
 .top-cart-row .dropdown-cart .dropdown-menu {
   border: 1px solid #e1e1e1;
@@ -1413,7 +1394,7 @@ header{background:#157ed2}
   font-family: 'Open Sans', sans-serif;
   font-size: 13px;
   line-height: 20px;
-  padding: 11px 15px;
+  padding: 15px 15px;
   text-transform: uppercase;
   -webkit-transitio: all 0.2s linear 0s;
   -moz-transition: all 0.2s linear 0s;
@@ -1636,12 +1617,6 @@ header{background:#157ed2}
 .header-nav .navbar-default .dropdown .dropdown-menu.pages .links > li > a:focus {
   margin-left: 0px;
 }
-
-
-/*===================================================================================*/
-/*  Side menu
-/*===================================================================================*/
-
 .sidebar .side-menu {
     background-color: #fff;
     border-radius: 2px;
@@ -1655,16 +1630,16 @@ header{background:#157ed2}
   -webkit-border-radius: 0px;
   -moz-border-radius: 0px;
   border-radius: 0px;
-  color: #333;
+  color: #fff;
   font-size: 14px;
   font-family: 'Open Sans', sans-serif;
   padding: 12px 17px;
   text-transform: uppercase;
-  background-color: #fdd922;
-    border: 1px solid #e9c532;
+  background-color: #59b210;
+    border: 1px solid #59b210;
 	font-weight:700;
 	letter-spacing: 0.5px;
-	border-bottom:1px #f1ce3c solid
+	border-bottom:1px #59b210 solid
 }
 .sidebar .side-menu .head .icon {
   margin-right: 5px;
@@ -1969,9 +1944,8 @@ header{background:#157ed2}
   width: 50px;
   position: absolute;
 }
-
 /*===================================================================================*/
-/*  Slider
+/*  OWL CAROUSEL
 /*===================================================================================*/
 #owl-main {
   text-align: center;
@@ -2335,7 +2309,7 @@ header{background:#157ed2}
   height: 370px;
 }
 #owl-main .item .caption {
-  color: #636363;
+  color: #fff;
   left: 50px;
   position: absolute;
   top: 24%;
@@ -2361,7 +2335,7 @@ header{background:#157ed2}
   letter-spacing:-1px
 }
 #owl-main .item .caption .big-text .highlight {
-  color: #f1c40f;
+  color: #fff;
 }
 #owl-main .item .caption .excerpt,
 #owl-main .item .caption .small {
@@ -2393,13 +2367,13 @@ header{background:#157ed2}
 #owl-main .item .caption.bg-color .big-text {
   background: rgba(0, 0, 0, 0);
   padding: 0px;
-  color: #000;
+  color: #fff;
 }
 #owl-main .item .caption.bg-color .excerpt,
 #owl-main .item .caption.bg-color .small {
   background: rgba(0, 0, 0, 0);
   padding: 0px;
-  color: #000;
+  color: #fff;
   margin-top: 0px;
 }
 #owl-main .item .caption.bg-color .excerpt span,
@@ -2613,7 +2587,7 @@ age-container #owl-main .owl-next {
 }
 
 .info-boxes-inner {
-  background-color: #0f6cb2;
+  background-color: #66ad44;
   box-shadow: 0 2px 4px 0 rgba(0,0,0,.08);
 }
   
@@ -2654,11 +2628,6 @@ age-container #owl-main .owl-next {
   font-family:'Open Sans', sans-serif
   
 }
-
-/*===================================================================================*/
-/*  Home Tabs
-/*===================================================================================*/
-
 .scroll-tabs {
   margin-bottom: 30px;
   background-color: #fff;
@@ -2761,7 +2730,7 @@ age-container #owl-main .owl-next {
 }
 .product .cart .action ul li.lnk {
   margin: 10px 0px;
-      background: #0f6cb2;
+      background: #66ad44;
     margin: 0px;
     padding: 8px 2px;
 	border-left:1px solid hsla(0,0%,100%,.2);
@@ -2773,7 +2742,7 @@ age-container #owl-main .owl-next {
   padding: 8px 10px;
 }
 .product .cart .action ul li.lnk.wishlist {
-	background:#0f6cb2;
+	background:#66ad44;
 	margin:0px;
 	border-radius:0px
 	
@@ -3550,7 +3519,7 @@ age-container #owl-main .owl-next {
   line-height: 145px;
   text-transform: uppercase;
   font-family: 'Open Sans', sans-serif;
-  color: #fdd922;
+  color: #fff;
 }
 .category-carousel .item .caption .excerpt {
   font-size:36px;
@@ -3718,6 +3687,9 @@ age-container #owl-main .owl-next {
 .search-result-container .category-product .product {
   margin-bottom: 30px;
 }
+
+.search-result-container .category-product .product .image{border:1px #eaeaea solid}
+
 .search-result-container .category-product .product .product-image .tag {
     width: 35px;
     height: 35px;
