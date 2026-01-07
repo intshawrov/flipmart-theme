@@ -11,6 +11,7 @@ function  flipmart_theme_styles(){
       wp_enqueue_style('rateit-css', get_template_directory_uri() . '/assets/css/rateit.css', array(), '1.0.0', 'all');
       wp_enqueue_style('bootstrap-select-css', get_template_directory_uri() . '/assets/css/bootstrap-select.min.css', array(), '1.0.0', 'all');
       wp_enqueue_style('flipmart-style-css', get_template_directory_uri() . '/assets/css/flipmart-style.css', array(), '1.0.0', 'all');
+      wp_enqueue_style('style-css', get_stylesheet_uri(), array(), '1.0.0', 'all');
 
       // JS Enqueue
       wp_enqueue_script('custom-js', get_template_directory_uri() . '/assets/js/scripts.js', array('jquery'), '1.0.0', true);

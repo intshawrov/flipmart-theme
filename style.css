@@ -6,3 +6,22 @@ Author URI: http://example.com
 Description: Flipmart HTML to WordPress learning theme
 Version: 1.0
 */
+
+a.added_to_cart.wc-forward {
+    display: inline-block;
+    margin-left: 08px;
+    background-color: #16a34a; /* darker green */
+    color: #fff;
+    padding: 5px 8px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    right: 0;
+    left: 0;
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 1;
+}
