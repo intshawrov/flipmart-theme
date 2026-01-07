@@ -25,3 +25,20 @@ a.added_to_cart.wc-forward {
     justify-content: center;
     opacity: 1;
 }
+
+h1.woocommerce-products-header__title.page-title {
+    display: none;
+}
+
+bdi {
+    font-size: 16px;
+    color: #000;
+}
+
+del {
+    float: right;
+}
+
+span.price {
+    width: 50%;
+}
