@@ -1652,7 +1652,7 @@
 <!-- ============================================== Testimonials: END ============================================== -->
 
 <div class="home-banner">
-<img src="assets/images/banners/LHS-banner.jpg" alt="Image">
+<img src="<?php echo get_template_directory_uri(); ?>/assets/images/banners/LHS-banner.jpg" alt="Image">
 </div> 
 
 
@@ -2237,7 +2237,7 @@
 	<div class="product">		
 		<div class="product-image">
 			<div class="image">
-				<a href="detail.html"><img  src="assets/images/products/p7.jpg" alt=""></a>
+				<a href="detail.html"><img  src="<?php echo get_template_directory_uri(); ?>/assets/images/products/p7.jpg" alt=""></a>
 			</div><!-- /.image -->			
 
 			            <div class="tag sale"><span>sale</span></div>            		   
@@ -2293,7 +2293,7 @@
 	<div class="product">		
 		<div class="product-image">
 			<div class="image">
-				<a href="detail.html"><img  src="assets/images/products/p8.jpg" alt=""></a>
+				<a href="detail.html"><img  src="<?php echo get_template_directory_uri(); ?>/assets/images/products/p8.jpg" alt=""></a>
 			</div><!-- /.image -->			
 
 			<div class="tag new"><span>new</span></div>                        		   
@@ -2349,7 +2349,7 @@
 	<div class="product">		
 		<div class="product-image">
 			<div class="image">
-				<a href="detail.html"><img  src="assets/images/products/p9.jpg" alt=""></a>
+				<a href="detail.html"><img  src="<?php echo get_template_directory_uri(); ?>/assets/images/products/p9.jpg" alt=""></a>
 			</div><!-- /.image -->			
 
 			                        <div class="tag hot"><span>hot</span></div>		   
@@ -2405,7 +2405,7 @@
 	<div class="product">		
 		<div class="product-image">
 			<div class="image">
-				<a href="detail.html"><img  src="assets/images/products/p10.jpg" alt=""></a>
+				<a href="detail.html"><img  src="<?php echo get_template_directory_uri(); ?>/assets/images/products/p10.jpg" alt=""></a>
 			</div><!-- /.image -->			
 
 			                        <div class="tag hot"><span>hot</span></div>		   
@@ -2468,7 +2468,7 @@
 	<div class="product">		
 		<div class="product-image">
 			<div class="image">
-				<a href="detail.html"><img  src="assets/images/products/p11.jpg" alt=""></a>
+				<a href="detail.html"><img  src="<?php echo get_template_directory_uri(); ?>/assets/images/products/p11.jpg" alt=""></a>
 			</div><!-- /.image -->			
 
 			<div class="tag new"><span>new</span></div>                        		   
@@ -2524,7 +2524,7 @@
 	<div class="product">		
 		<div class="product-image">
 			<div class="image">
-				<a href="detail.html"><img  src="assets/images/products/p12.jpg" alt=""></a>
+				<a href="detail.html"><img  src="<?php echo get_template_directory_uri(); ?>/assets/images/products/p12.jpg" alt=""></a>
 			</div><!-- /.image -->			
 
 			<div class="tag new"><span>new</span></div>                        		   
@@ -2580,7 +2580,7 @@
 	<div class="product">		
 		<div class="product-image">
 			<div class="image">
-				<a href="detail.html"><img  src="assets/images/products/p13.jpg" alt=""></a>
+				<a href="detail.html"><img  src="<?php echo get_template_directory_uri(); ?>/assets/images/products/p13.jpg" alt=""></a>
 			</div><!-- /.image -->			
 
 			            <div class="tag sale"><span>sale</span></div>            		   
@@ -2636,7 +2636,7 @@
 	<div class="product">		
 		<div class="product-image">
 			<div class="image">
-				<a href="detail.html"><img src="assets/images/products/p14.jpg" alt=""></a>
+				<a href="detail.html"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/p14.jpg" alt=""></a>
 			</div><!-- /.image -->			
 
 			                        <div class="tag hot"><span>hot</span></div>		   
@@ -2692,7 +2692,7 @@
 	<div class="product">		
 		<div class="product-image">
 			<div class="image">
-				<a href="detail.html"><img  src="assets/images/products/p15.jpg" alt=""></a>
+				<a href="detail.html"><img  src="<?php echo get_template_directory_uri(); ?>/assets/images/products/p15.jpg" alt=""></a>
 			</div><!-- /.image -->			
 
 			                        <div class="tag hot"><span>hot</span></div>		   
@@ -2748,7 +2748,7 @@
 	<div class="product">		
 		<div class="product-image">
 			<div class="image">
-				<a href="detail.html"><img src="assets/images/products/p16.jpg" alt=""></a>
+				<a href="detail.html"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/p16.jpg" alt=""></a>
 			</div><!-- /.image -->			
 
 			            <div class="tag sale"><span>sale</span></div>            		   
@@ -2811,7 +2811,7 @@
 	<div class="product">		
 		<div class="product-image">
 			<div class="image">
-				<a href="detail.html"><img src="assets/images/products/p18.jpg" alt=""></a>
+				<a href="detail.html"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/p18.jpg" alt=""></a>
 			</div><!-- /.image -->			
 
 			            <div class="tag sale"><span>sale</span></div>            		   
@@ -2867,7 +2867,7 @@
 	<div class="product">		
 		<div class="product-image">
 			<div class="image">
-				<a href="detail.html"><img  src="assets/images/products/p18.jpg" alt=""></a>
+				<a href="detail.html"><img  src="<?php echo get_template_directory_uri(); ?>/assets/images/products/p18.jpg" alt=""></a>
 			</div><!-- /.image -->			
 
 			                        <div class="tag hot"><span>hot</span></div>		   
@@ -2923,7 +2923,7 @@
 	<div class="product">		
 		<div class="product-image">
 			<div class="image">
-				<a href="detail.html"><img  src="assets/images/products/p17.jpg" alt=""></a>
+				<a href="detail.html"><img  src="<?php echo get_template_directory_uri(); ?>/assets/images/products/p17.jpg" alt=""></a>
 			</div><!-- /.image -->			
 
 			            <div class="tag sale"><span>sale</span></div>            		   
@@ -2979,7 +2979,7 @@
 	<div class="product">		
 		<div class="product-image">
 			<div class="image">
-				<a href="detail.html"><img  src="assets/images/products/p16.jpg" alt=""></a>
+				<a href="detail.html"><img  src="<?php echo get_template_directory_uri(); ?>/assets/images/products/p16.jpg" alt=""></a>
 			</div><!-- /.image -->			
 
 			<div class="tag new"><span>new</span></div>                        		   
@@ -3035,7 +3035,7 @@
 	<div class="product">		
 		<div class="product-image">
 			<div class="image">
-				<a href="detail.html"><img  src="assets/images/products/p13.jpg" alt=""></a>
+				<a href="detail.html"><img  src="<?php echo get_template_directory_uri(); ?>/assets/images/products/p13.jpg" alt=""></a>
 			</div><!-- /.image -->			
 
 			<div class="tag new"><span>new</span></div>                        		   
@@ -3091,7 +3091,7 @@
 	<div class="product">		
 		<div class="product-image">
 			<div class="image">
-				<a href="detail.html"><img  src="assets/images/products/p14.jpg" alt=""></a>
+				<a href="detail.html"><img  src="<?php echo get_template_directory_uri(); ?>/assets/images/products/p14.jpg" alt=""></a>
 			</div><!-- /.image -->			
 
 			                        <div class="tag hot"><span>hot</span></div>		   
@@ -3153,7 +3153,7 @@
 <div class="col-md-7 col-sm-7">
 <div class="wide-banner cnt-strip">
 <div class="image">
-<img class="img-responsive" src="assets/images/banners/home-banner1.jpg" alt="">
+<img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/banners/home-banner1.jpg" alt="">
 </div>
 
 </div><!-- /.wide-banner -->
@@ -3161,7 +3161,7 @@
 <div class="col-md-5 col-sm-5">
 <div class="wide-banner cnt-strip">
 <div class="image">
-<img class="img-responsive" src="assets/images/banners/home-banner2.jpg" alt="">
+<img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/assets/images/banners/home-banner2.jpg" alt="">
 </div>
 
 </div><!-- /.wide-banner -->
@@ -3552,7 +3552,7 @@
 			<div class="product-image">
 				<div class="image">
 					<a href="#">
-						<img src="assets/images/products/p20.jpg" alt="">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/p20.jpg" alt="">
 					</a>					
 				</div><!-- /.image -->
 					
@@ -3583,7 +3583,7 @@
 			<div class="product-image">
 				<div class="image">
 					<a href="#">
-						<img src="assets/images/products/p21.jpg" alt="">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/p21.jpg" alt="">
 					</a>					
 				</div><!-- /.image -->
 					
@@ -3617,7 +3617,7 @@
 			<div class="product-image">
 				<div class="image">
 					<a href="#">
-						<img src="assets/images/products/p22.jpg" alt="">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/p22.jpg" alt="">
 					</a>					
 				</div><!-- /.image -->
 					
@@ -3647,7 +3647,7 @@
 			<div class="product-image">
 				<div class="image">
 					<a href="#">
-						<img src="assets/images/products/p23.jpg" alt="">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/p23.jpg" alt="">
 						</a>					
 				</div><!-- /.image -->
 					
@@ -3682,7 +3682,7 @@
 			<div class="product-image">
 				<div class="image">
 					<a href="#">
-						<img src="assets/images/products/p24.jpg" alt="">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/p24.jpg" alt="">
 					</a>					
 				</div><!-- /.image -->
 											
@@ -3713,7 +3713,7 @@
 			<div class="product-image">
 				<div class="image">
 					<a href="#">
-						<img src="assets/images/products/p25.jpg" alt="">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/p25.jpg" alt="">
 					</a>					
 				</div><!-- /.image -->
 					
@@ -3747,7 +3747,7 @@
 			<div class="product-image">
 				<div class="image">
 					<a href="#">
-						<img src="assets/images/products/p26.jpg" alt="">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/p26.jpg" alt="">
 								</a>					
 				</div><!-- /.image -->
 											
@@ -3778,7 +3778,7 @@
 			<div class="product-image">
 				<div class="image">
 					<a href="#">
-						<img src="assets/images/products/p27.jpg" alt="">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/products/p27.jpg" alt="">
 					</a>					
 				</div><!-- /.image -->
 					
@@ -3818,7 +3818,7 @@
 					<div class="blog-post">
 						<div class="blog-post-image">
 							<div class="image">
-								<a href="blog.html"><img src="assets/images/blog-post/post1.jpg" alt=""></a>
+								<a href="blog.html"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/blog-post/post1.jpg" alt=""></a>
 							</div>
 						</div><!-- /.blog-post-image -->
 					
@@ -3839,7 +3839,7 @@
 					<div class="blog-post">
 						<div class="blog-post-image">
 							<div class="image">
-								<a href="blog.html"><img src="assets/images/blog-post/post2.jpg" alt=""></a>
+								<a href="blog.html"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/blog-post/post2.jpg" alt=""></a>
 							</div>
 						</div><!-- /.blog-post-image -->
 					
@@ -3863,7 +3863,7 @@
 					<div class="blog-post">
 						<div class="blog-post-image">
 							<div class="image">
-								<a href="blog.html"><img src="assets/images/blog-post/post1.jpg" alt=""></a>
+								<a href="blog.html"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/blog-post/post1.jpg" alt=""></a>
 							</div>
 						</div><!-- /.blog-post-image -->
 					
@@ -3884,7 +3884,7 @@
 					<div class="blog-post">
 						<div class="blog-post-image">
 							<div class="image">
-								<a href="blog.html"><img src="assets/images/blog-post/post2.jpg" alt=""></a>
+								<a href="blog.html"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/blog-post/post2.jpg" alt=""></a>
 							</div>
 						</div><!-- /.blog-post-image -->
 					
@@ -3905,7 +3905,7 @@
 					<div class="blog-post">
 						<div class="blog-post-image">
 							<div class="image">
-								<a href="blog.html"><img src="assets/images/blog-post/post1.jpg" alt=""></a>
+								<a href="blog.html"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/blog-post/post1.jpg" alt=""></a>
 							</div>
 						</div><!-- /.blog-post-image -->
 					
@@ -3938,7 +3938,7 @@
 	<div class="product">		
 		<div class="product-image">
 			<div class="image">
-				<a href="detail.html"><img  src="assets/images/products/p19.jpg" alt=""></a>
+				<a href="detail.html"><img  src="<?php echo get_template_directory_uri(); ?>/assets/images/products/p19.jpg" alt=""></a>
 			</div><!-- /.image -->			
 
 			<div class="tag new"><span>new</span></div>                        		   
@@ -3994,7 +3994,7 @@
 	<div class="product">		
 		<div class="product-image">
 			<div class="image">
-				<a href="detail.html"><img  src="assets/images/products/p28.jpg" alt=""></a>
+				<a href="detail.html"><img  src="<?php echo get_template_directory_uri(); ?>/assets/images/products/p28.jpg" alt=""></a>
 			</div><!-- /.image -->			
 
 			<div class="tag new"><span>new</span></div>                        		   
@@ -4050,7 +4050,7 @@
 	<div class="product">		
 		<div class="product-image">
 			<div class="image">
-				<a href="detail.html"><img  src="assets/images/products/p30.jpg" alt=""></a>
+				<a href="detail.html"><img  src="<?php echo get_template_directory_uri(); ?>/assets/images/products/p30.jpg" alt=""></a>
 			</div><!-- /.image -->			
 
 			                        <div class="tag hot"><span>hot</span></div>		   
@@ -4106,7 +4106,7 @@
 	<div class="product">		
 		<div class="product-image">
 			<div class="image">
-				<a href="detail.html"><img  src="assets/images/products/p1.jpg" alt=""></a>
+				<a href="detail.html"><img  src="<?php echo get_template_directory_uri(); ?>/assets/images/products/p1.jpg" alt=""></a>
 			</div><!-- /.image -->			
 
 			                        <div class="tag hot"><span>hot</span></div>		   
@@ -4162,7 +4162,7 @@
 	<div class="product">		
 		<div class="product-image">
 			<div class="image">
-				<a href="detail.html"><img  src="assets/images/products/p2.jpg" alt=""></a>
+				<a href="detail.html"><img  src="<?php echo get_template_directory_uri(); ?>/assets/images/products/p2.jpg" alt=""></a>
 			</div><!-- /.image -->			
 
 			            <div class="tag sale"><span>sale</span></div>            		   
@@ -4218,7 +4218,7 @@
 	<div class="product">		
 		<div class="product-image">
 			<div class="image">
-				<a href="detail.html"><img  src="assets/images/products/p3.jpg" alt=""></a>
+				<a href="detail.html"><img  src="<?php echo get_template_directory_uri(); ?>/assets/images/products/p3.jpg" alt=""></a>
 			</div><!-- /.image -->			
 
 			            <div class="tag sale"><span>sale</span></div>            		   
@@ -4281,61 +4281,61 @@
 			<div id="brand-slider" class="owl-carousel brand-slider custom-carousel owl-theme">
 				<div class="item m-t-15">
 					<a href="#" class="image">
-						<img data-echo="assets/images/brands/brand1.png" src="assets/images/blank.gif" alt="">
+						<img data-echo="<?php echo get_template_directory_uri(); ?>/assets/images/brands/brand1.png" src="<?php echo get_template_directory_uri(); ?>/assets/images/blank.gif" alt="">
 					</a>	
 				</div><!--/.item-->
 
 				<div class="item m-t-10">
 					<a href="#" class="image">
-						<img data-echo="assets/images/brands/brand2.png" src="assets/images/blank.gif" alt="">
+						<img data-echo="<?php echo get_template_directory_uri(); ?>/assets/images/brands/brand2.png" src="<?php echo get_template_directory_uri(); ?>/assets/images/blank.gif" alt="">
 					</a>	
 				</div><!--/.item-->
 
 				<div class="item">
 					<a href="#" class="image">
-						<img data-echo="assets/images/brands/brand3.png" src="assets/images/blank.gif" alt="">
+						<img data-echo="<?php echo get_template_directory_uri(); ?>/assets/images/brands/brand3.png" src="<?php echo get_template_directory_uri(); ?>/assets/images/blank.gif" alt="">
 					</a>	
 				</div><!--/.item-->
 
 				<div class="item">
 					<a href="#" class="image">
-						<img data-echo="assets/images/brands/brand4.png" src="assets/images/blank.gif" alt="">
+						<img data-echo="<?php echo get_template_directory_uri(); ?>/assets/images/brands/brand4.png" src="<?php echo get_template_directory_uri(); ?>/assets/images/blank.gif" alt="">
 					</a>	
 				</div><!--/.item-->
 
 				<div class="item">
 					<a href="#" class="image">
-						<img data-echo="assets/images/brands/brand5.png" src="assets/images/blank.gif" alt="">
+						<img data-echo="<?php echo get_template_directory_uri(); ?>/assets/images/brands/brand5.png" src="<?php echo get_template_directory_uri(); ?>/assets/images/blank.gif" alt="">
 					</a>	
 				</div><!--/.item-->
 
 				<div class="item">
 					<a href="#" class="image">
-						<img data-echo="assets/images/brands/brand6.png" src="assets/images/blank.gif" alt="">
+						<img data-echo="<?php echo get_template_directory_uri(); ?>/assets/images/brands/brand6.png" src="<?php echo get_template_directory_uri(); ?>/assets/images/blank.gif" alt="">
 					</a>	
 				</div><!--/.item-->
 
 				<div class="item">
 					<a href="#" class="image">
-						<img data-echo="assets/images/brands/brand2.png" src="assets/images/blank.gif" alt="">
+						<img data-echo="<?php echo get_template_directory_uri(); ?>/assets/images/brands/brand2.png" src="<?php echo get_template_directory_uri(); ?>/assets/images/blank.gif" alt="">
 					</a>	
 				</div><!--/.item-->
 
 				<div class="item">
 					<a href="#" class="image">
-						<img data-echo="assets/images/brands/brand4.png" src="assets/images/blank.gif" alt="">
+						<img data-echo="<?php echo get_template_directory_uri(); ?>/assets/images/brands/brand4.png" src="<?php echo get_template_directory_uri(); ?>/assets/images/blank.gif" alt="">
 					</a>	
 				</div><!--/.item-->
 
 				<div class="item">
 					<a href="#" class="image">
-						<img data-echo="assets/images/brands/brand1.png" src="assets/images/blank.gif" alt="">
+						<img data-echo="<?php echo get_template_directory_uri(); ?>/assets/images/brands/brand1.png" src="<?php echo get_template_directory_uri(); ?>/assets/images/blank.gif" alt="">
 					</a>	
 				</div><!--/.item-->
 
 				<div class="item">
 					<a href="#" class="image">
-						<img data-echo="assets/images/brands/brand5.png" src="assets/images/blank.gif" alt="">
+						<img data-echo="<?php echo get_template_directory_uri(); ?>/assets/images/brands/brand5.png" src="<?php echo get_template_directory_uri(); ?>/assets/images/blank.gif" alt="">
 					</a>	
 				</div><!--/.item-->
 		    </div><!-- /.owl-carousel #logo-slider -->
