@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="<?php language_attributes(); ?>">
 	<head>
 		<!-- Meta -->
-		<meta charset="utf-8">
+		<meta charset="<?php bloginfo( 'charset' ); ?>">
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 		<meta name="description" content="">
@@ -10,7 +10,7 @@
 	    <meta name="keywords" content="MediaCenter, Template, eCommerce">
 	    <meta name="robots" content="all">
 
-	    <title>Flipmart premium HTML5 & CSS3 Template</title>
+	    <title><?php bloginfo( 'name' ); ?></title>
 
 		
 
