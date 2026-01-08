@@ -157,3 +157,32 @@ $pages = paginate_links( array(
        echo '</div></ul>';
         }
 }
+
+// Products per page dropdown
+
+
+function flipmart_wc_products_per_page_dropdown() {
+
+    $per_page = isset($_GET['per_page']) ? intval($_GET['per_page']) : get_option('posts_per_page');
+    ?>
+    <form method="get" class="woocommerce-products-per-page">
+        <label>Show: </label>
+        <select name="per_page" onchange="this.form.submit()">
+            <?php
+            for ( $i = 1; $i <= 10; $i++ ) {
+                echo '<option value="'.$i.'" '.selected($per_page, $i, false).'>'.$i.'</option>';
+            }
+            ?>
+        </select>
+
+        <?php
+        // keep other filters (category, search, etc)
+        foreach ( $_GET as $key => $value ) {
+            if ( 'per_page' === $key ) continue;
+            echo '<input type="hidden" name="'.esc_attr($key).'" value="'.esc_attr($value).'">';
+        }
+        ?>
+    </form>
+    <?php
+}
+
