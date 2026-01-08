@@ -62,3 +62,31 @@ if (!function_exists('loop_columns')) {
 		return 3; // 3 products per row
 	}
 }
+
+/**
+ * Change WooCommerce Add to Cart button text everywhere
+ * Shop page + Single product + All product types
+ */
+add_filter( 'woocommerce_product_add_to_cart_text', 'flipmart_add_to_cart_text', 10, 2 );
+add_filter( 'woocommerce_product_single_add_to_cart_text', 'flipmart_add_to_cart_text', 10, 2 );
+
+function flipmart_add_to_cart_text( $text, $product ) {
+
+    // Variable product
+    if ( $product->is_type( 'variable' ) ) {
+        return __( 'Select Options', 'woocommerce' );
+    }
+
+    // Grouped product
+    if ( $product->is_type( 'grouped' ) ) {
+        return __( 'View Products', 'woocommerce' );
+    }
+
+    // External / Affiliate product
+    if ( $product->is_type( 'external' ) ) {
+        return __( 'Buy Now', 'woocommerce' );
+    }
+
+    // Simple product (default)
+    return __( 'Add Cart', 'woocommerce' );
+}
