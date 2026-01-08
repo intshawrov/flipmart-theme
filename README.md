@@ -26,31 +26,4 @@ The goal of this project is to convert a static HTML Flipmart template into a **
 
 ---
 
-## 📂 Theme Structure
 
-flipmart-theme/
-│
-├── assets/
-│   ├── css/
-│   │   ├── bootstrap.min.css
-│   │   ├── main.css
-│   │   └── responsive.css
-│   │
-│   ├── js/
-│   │   ├── jquery.min.js
-│   │   ├── bootstrap.min.js
-│   │   └── main.js
-│   │
-│   └── images/
-│
-├── left-sidebar.php
-├── right-sidebar.php
-├── header.php
-├── footer.php
-├── index.php
-├── page.php
-├── front-page.php
-├── functions.php
-├── style.css
-├── screenshot.png
-└── README.md
