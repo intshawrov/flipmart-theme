@@ -27,6 +27,8 @@ a.added_to_cart.wc-forward {
 }
 
 h1.woocommerce-products-header__title.page-title {
+    color: #000;
+    background: #fff;
     display: none;
 }
 

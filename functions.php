@@ -90,3 +90,28 @@ function flipmart_add_to_cart_text( $text, $product ) {
     // Simple product (default)
     return __( 'Add Cart', 'woocommerce' );
 }
+
+
+/**
+ * Change several of the breadcrumb defaults
+ */
+add_filter( 'woocommerce_breadcrumb_defaults', 'flipmart_woocommerce_breadcrumbs' );
+function flipmart_woocommerce_breadcrumbs() {
+    return array(
+            'delimiter'   => ' &#47; ',
+            'wrap_before' => '<div class="breadcrumb-inner">
+			<ul class="list-inline list-unstyled">',
+            'wrap_after'  => '</ul></div>',
+            'before'      => '',
+            'after'       => '',
+            'home'        => _x( 'Home', 'breadcrumb', 'woocommerce' ),
+        );
+}
+
+/**
+ * Remove the breadcrumbs 
+ */
+add_action( 'init', 'woo_remove_wc_breadcrumbs' );
+function woo_remove_wc_breadcrumbs() {
+    remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0 );
+}
