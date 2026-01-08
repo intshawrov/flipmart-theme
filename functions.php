@@ -50,6 +50,7 @@ function flipmart_theme_setup(){
       register_nav_menus(
             array(
                   'primary' => __('Primary Menu', 'flipmart'),
+                  
             )
       );
 }
