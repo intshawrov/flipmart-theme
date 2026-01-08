@@ -186,20 +186,5 @@ function flipmart_wc_products_per_page_dropdown() {
     <?php
 }
 
-// Customize sorting options
-
-
-function flipmart_custom_woocommerce_sorting_options( $sortby ) {
-
-    $sortby = array(
-        'menu_order' => 'Position',
-        'price'      => 'Price: Lowest first',
-        'price-desc' => 'Price: Highest first',
-        'title'      => 'Product Name: A to Z',
-        'title-desc' => 'Product Name: Z to A',
-    );
-
-    return $sortby;
-}
 
 
