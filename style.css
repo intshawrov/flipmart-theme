@@ -44,3 +44,7 @@ del {
 span.price {
     width: 50%;
 }
+
+ul.list-inline.list-unstyled {
+    float: right ;
+}

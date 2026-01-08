@@ -11,13 +11,8 @@ function  flipmart_theme_styles(){
       wp_enqueue_style('rateit-css', get_template_directory_uri() . '/assets/css/rateit.css', array(), '1.0.0', 'all');
       wp_enqueue_style('bootstrap-select-css', get_template_directory_uri() . '/assets/css/bootstrap-select.min.css', array(), '1.0.0', 'all');
       wp_enqueue_style('flipmart-style-css', get_template_directory_uri() . '/assets/css/flipmart-style.css', array(), '1.0.0', 'all');
+      wp_enqueue_style('font-awesome','https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css',array(),'6.5.1');
       wp_enqueue_style('style-css', get_stylesheet_uri(), array(), '1.0.0', 'all');
-       wp_enqueue_style(
-        'font-awesome',
-        'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css',
-        array(),
-        '6.5.1'
-    );
 
       // JS Enqueue
       wp_enqueue_script('custom-js', get_template_directory_uri() . '/assets/js/scripts.js', array('jquery'), '1.0.0', true);
@@ -149,7 +144,7 @@ $pages = paginate_links( array(
         'total' => $wp_query->max_num_pages,
         'type'  => 'array',
         'prev_next'          => true,
-        'prev_text'          => __( '<i class="fa-regular fa-angles-left"></i>' ),
+        'prev_text'          => __( '<i class="fa-solid fa-angles-left"></i>' ),
         'next_text'          => __( '<i class="fa-solid fa-angles-right"></i>' ),
     ) );
     if( is_array( $pages ) ) {
