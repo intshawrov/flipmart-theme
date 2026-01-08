@@ -48,3 +48,35 @@ span.price {
 ul.list-inline.list-unstyled {
     float: right ;
 }
+
+ul.list-inline.list-unstyled {
+    float: left;
+}
+
+select {
+    border: 1px solid #e5e5e5;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    padding: 4px 12px;
+    background: #fff;
+    font-size: 13px;
+}
+
+ul.list-inline.list-unstyled {
+    float: right;
+}
+
+form.woocommerce-products-per-page {
+    margin-bottom: 20px;
+}
+
+label {
+    color: #666666;
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif, sans-serif;
+    font-size: 12px;
+    line-height: 28px;
+    margin-right: 10px;
+    font-weight: 300;
+}

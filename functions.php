@@ -165,8 +165,8 @@ function flipmart_wc_products_per_page_dropdown() {
 
     $per_page = isset($_GET['per_page']) ? intval($_GET['per_page']) : get_option('posts_per_page');
     ?>
-    <form method="get" class="woocommerce-products-per-page">
-        <label>Show: </label>
+    <form method="get" class="fld inline">
+        <label>Show </label>
         <select name="per_page" onchange="this.form.submit()">
             <?php
             for ( $i = 1; $i <= 10; $i++ ) {
@@ -185,4 +185,21 @@ function flipmart_wc_products_per_page_dropdown() {
     </form>
     <?php
 }
+
+// Customize sorting options
+
+
+function flipmart_custom_woocommerce_sorting_options( $sortby ) {
+
+    $sortby = array(
+        'menu_order' => 'Position',
+        'price'      => 'Price: Lowest first',
+        'price-desc' => 'Price: Highest first',
+        'title'      => 'Product Name: A to Z',
+        'title-desc' => 'Product Name: Z to A',
+    );
+
+    return $sortby;
+}
+
 
