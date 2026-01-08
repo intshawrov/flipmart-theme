@@ -92,9 +92,9 @@ function flipmart_add_to_cart_text( $text, $product ) {
 }
 
 
-/**
- * Change several of the breadcrumb defaults
- */
+
+//Change several of the breadcrumb defaults
+
 add_filter( 'woocommerce_breadcrumb_defaults', 'flipmart_woocommerce_breadcrumbs' );
 function flipmart_woocommerce_breadcrumbs() {
     return array(
@@ -108,15 +108,21 @@ function flipmart_woocommerce_breadcrumbs() {
         );
 }
 
-/**
- * Remove the breadcrumbs 
- */
+
+// Remove the breadcrumbs 
+
 add_action( 'init', 'woo_remove_wc_breadcrumbs' );
 function woo_remove_wc_breadcrumbs() {
     remove_action( 'woocommerce_before_main_content', 'woocommerce_breadcrumb', 20, 0 );
 }
-
+// Remove the result count from shop page
 add_action( 'init', 'flipmart_remove_wc_breadcrumbs' );
 function flipmart_remove_wc_breadcrumbs() {
     remove_action( 'woocommerce_before_shop_loop', 'woocommerce_result_count', 20, 0 );
+}
+
+// Remove woocommerce catalog ordering dropdown
+add_action( 'init', 'flipmart_remove_catalog_ordaring' );
+function flipmart_remove_catalog_ordaring() {
+    remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30, 0 );
 }
