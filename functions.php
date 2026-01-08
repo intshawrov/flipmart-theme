@@ -12,6 +12,12 @@ function  flipmart_theme_styles(){
       wp_enqueue_style('bootstrap-select-css', get_template_directory_uri() . '/assets/css/bootstrap-select.min.css', array(), '1.0.0', 'all');
       wp_enqueue_style('flipmart-style-css', get_template_directory_uri() . '/assets/css/flipmart-style.css', array(), '1.0.0', 'all');
       wp_enqueue_style('style-css', get_stylesheet_uri(), array(), '1.0.0', 'all');
+       wp_enqueue_style(
+        'font-awesome',
+        'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css',
+        array(),
+        '6.5.1'
+    );
 
       // JS Enqueue
       wp_enqueue_script('custom-js', get_template_directory_uri() . '/assets/js/scripts.js', array('jquery'), '1.0.0', true);
@@ -125,4 +131,33 @@ function flipmart_remove_wc_breadcrumbs() {
 add_action( 'init', 'flipmart_remove_catalog_ordaring' );
 function flipmart_remove_catalog_ordaring() {
     remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 30, 0 );
+}
+
+
+function flipmart_pagination() {
+
+global $wp_query;
+
+if ( $wp_query->max_num_pages <= 1 ) return; 
+
+$big = 999999999; // need an unlikely integer
+
+$pages = paginate_links( array(
+        'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
+        'format' => '?paged=%#%',
+        'current' => max( 1, get_query_var('paged') ),
+        'total' => $wp_query->max_num_pages,
+        'type'  => 'array',
+        'prev_next'          => true,
+        'prev_text'          => __( '<i class="fa-regular fa-angles-left"></i>' ),
+        'next_text'          => __( '<i class="fa-solid fa-angles-right"></i>' ),
+    ) );
+    if( is_array( $pages ) ) {
+        $paged = ( get_query_var('paged') == 0 ) ? 1 : get_query_var('paged');
+        echo '<div class="pagination-container"><ul class="list-inline list-unstyled">';
+        foreach ( $pages as $page ) {
+                echo "<li>$page</li>";
+        }
+       echo '</div></ul>';
+        }
 }

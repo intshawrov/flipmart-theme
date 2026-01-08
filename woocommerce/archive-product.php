@@ -55,9 +55,18 @@ do_action( 'woocommerce_before_main_content' );
  *
  * @hooked woocommerce_product_taxonomy_archive_header - 10
  */
-do_action( 'woocommerce_shop_loop_header' );
+do_action( 'woocommerce_shop_loop_header' ); ?>
 
-if ( woocommerce_product_loop() ) {
+<div class="row">
+	<div class="col-md-3">col 1</div>
+	<div class="col-md-3">col 2</div>
+	<div class="col-md-3">col 3</div>
+	<div class="col-md-3"><?php flipmart_pagination(); ?></div>
+</div>
+
+
+
+<?php if ( woocommerce_product_loop() ) {
 
 	/**
 	 * Hook: woocommerce_before_shop_loop.
