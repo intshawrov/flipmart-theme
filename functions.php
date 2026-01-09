@@ -229,13 +229,13 @@ function flipmart_wc_loop_shop_view_mode() {
 
         <a href="<?php echo esc_url( add_query_arg( 'view', 'grid' ) ); ?>"
            class="grid-view <?php echo ( $current_view !== 'list' ) ? 'active' : ''; ?>">
-            <i class="fa fa-th"></i>
+            <i class="fa-solid fa-border-all"></i>
             <span>Grid</span>
         </a>
 
         <a href="<?php echo esc_url( add_query_arg( 'view', 'list' ) ); ?>"
            class="list-view <?php echo ( $current_view === 'list' ) ? 'active' : ''; ?>">
-            <i class="fa fa-th-list"></i>
+            <i class="fa-solid fa-table-list"></i>
             <span>List</span>
         </a>
 
