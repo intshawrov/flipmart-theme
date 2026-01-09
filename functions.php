@@ -196,7 +196,7 @@ function flipmart_wphelper_woocommerce_get_catalog_ordering_args() {
         <select name="orderby" onchange="this.form.submit()">
             <?php
             $options = array(
-                'menu_order' => 'Default sorting',
+                'menu_order' => 'Position',
                 'popularity' => 'Sort by popularity',
                 'rating'     => 'Sort by average rating',
                 'date'       => 'Sort by newness',
