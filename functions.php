@@ -223,10 +223,22 @@ function flipmart_wphelper_woocommerce_get_catalog_ordering_args() {
 
 // gird list toggle function
 function flipmart_wc_loop_shop_view_mode() {
+    $current_view = isset( $_GET['view'] ) ? $_GET['view'] : 'grid';
     ?>
     <div class="shop-view-mode">
-        <a href="<?php echo esc_url( add_query_arg( 'view', 'grid' ) ); ?>" class="grid-view <?php echo ( isset( $_GET['view'] ) && 'list' !== $_GET['view'] ) ? 'active' : ''; ?>"><i class="fa fa-th"></i></a>
-        <a href="<?php echo esc_url( add_query_arg( 'view', 'list' ) ); ?>" class="list-view <?php echo ( isset( $_GET['view'] ) && 'list' === $_GET['view'] ) ? 'active' : ''; ?>"><i class="fa fa-th-list"></i></a>
+
+        <a href="<?php echo esc_url( add_query_arg( 'view', 'grid' ) ); ?>"
+           class="grid-view <?php echo ( $current_view !== 'list' ) ? 'active' : ''; ?>">
+            <i class="fa fa-th"></i>
+            <span>Grid</span>
+        </a>
+
+        <a href="<?php echo esc_url( add_query_arg( 'view', 'list' ) ); ?>"
+           class="list-view <?php echo ( $current_view === 'list' ) ? 'active' : ''; ?>">
+            <i class="fa fa-th-list"></i>
+            <span>List</span>
+        </a>
+
     </div>
     <?php
 }
