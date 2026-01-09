@@ -220,3 +220,13 @@ function flipmart_wphelper_woocommerce_get_catalog_ordering_args() {
     </form>
     <?php
 }
+
+// gird list toggle function
+function flipmart_wc_loop_shop_view_mode() {
+    ?>
+    <div class="shop-view-mode">
+        <a href="<?php echo esc_url( add_query_arg( 'view', 'grid' ) ); ?>" class="grid-view <?php echo ( isset( $_GET['view'] ) && 'list' !== $_GET['view'] ) ? 'active' : ''; ?>"><i class="fa fa-th"></i></a>
+        <a href="<?php echo esc_url( add_query_arg( 'view', 'list' ) ); ?>" class="list-view <?php echo ( isset( $_GET['view'] ) && 'list' === $_GET['view'] ) ? 'active' : ''; ?>"><i class="fa fa-th-list"></i></a>
+    </div>
+    <?php
+}
