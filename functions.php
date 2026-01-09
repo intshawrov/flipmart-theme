@@ -187,31 +187,41 @@ function flipmart_wc_products_per_page_dropdown() {
 }
 
 
-// Products per page selectbox (Yanco)
+//  Add custom sorting options (asc/desc)
 
-function flipmart_wphelper_woocommerce_get_catalog_ordering_args() {
+function flipmart_custom_woocommerce_get_catalog_ordering_args() {
+    $orderby_value = isset( $_GET['orderby'] ) ? wc_clean( wp_unslash( $_GET['orderby'] ) ) : wc_get_default_product_sorting_option();
+    $showing_text = '';
+
+    if ( 'price_asc' === $orderby_value ) {
+        add_filter( 'woocommerce_get_catalog_ordering_args', function( $args ) {
+            $args['orderby'] = 'meta_value_num';
+            $args['order'] = 'asc';
+            $args['meta_key'] = '_price';
+            return $args;
+        } );
+        $showing_text = 'Sorting by price: low to high';
+    } elseif ( 'price_desc' === $orderby_value ) {
+        add_filter( 'woocommerce_get_catalog_ordering_args', function( $args ) {
+            $args['orderby'] = 'meta_value_num';
+            $args['order'] = 'desc';
+            $args['meta_key'] = '_price';
+            return $args;
+        } );
+        $showing_text = 'Sorting by price: high to low';
+    }
+
     ?>
-    <form method="get" class="fld inline">
+    <form method="get" class="woocommerce-ordering fld inline">
         <label>Sort by </label>
         <select name="orderby" onchange="this.form.submit()">
-            <?php
-            $options = array(
-                'menu_order' => 'Position',
-                'popularity' => 'Sort by popularity',
-                'rating'     => 'Sort by average rating',
-                'date'       => 'Sort by newness',
-                'price'      => 'Sort by price: low to high',
-                'price-desc' => 'Sort by price: high to low',
-            );
-            $current_orderby = isset($_GET['orderby']) ? $_GET['orderby'] : 'menu_order';
-            foreach ( $options as $value => $label ) {
-                echo '<option value="'.$value.'" '.selected($current_orderby, $value, false).'>'.$label.'</option>';
-            }
-            ?>
+            <option value="menu_order" <?php selected( $orderby_value, 'menu_order' ); ?>>Default sorting</option>
+            <option value="price_asc" <?php selected( $orderby_value, 'price_asc' ); ?>>Sort by price: low to high</option>
+            <option value="price_desc" <?php selected( $orderby_value, 'price_desc' ); ?>>Sort by price: high to low</option>
         </select>
 
         <?php
-        // keep other filters (per_page, category, search, etc)
+        // keep other filters (category, search, etc)
         foreach ( $_GET as $key => $value ) {
             if ( 'orderby' === $key ) continue;
             echo '<input type="hidden" name="'.esc_attr($key).'" value="'.esc_attr($value).'">';

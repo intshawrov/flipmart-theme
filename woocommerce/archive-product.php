@@ -59,7 +59,7 @@ do_action( 'woocommerce_shop_loop_header' ); ?>
 
 <div class="row">
 	<div class="col-md-3"><?php flipmart_wc_loop_shop_view_mode(); ?></div>
-	<div class="col-md-3"><?php flipmart_wphelper_woocommerce_get_catalog_ordering_args(); ?></div>
+	<div class="col-md-3"><?php flipmart_custom_woocommerce_get_catalog_ordering_args(); ?></div>
 	<div class="col-md-3"><?php flipmart_wc_products_per_page_dropdown(); ?></div>
 	<div class="col-md-3"><?php flipmart_pagination(); ?></div>
 </div>
