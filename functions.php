@@ -187,57 +187,36 @@ function flipmart_wc_products_per_page_dropdown() {
 }
 
 
+// Products per page selectbox (Yanco)
 
-add_action( 'woocommerce_before_shop_loop', 'flipmart_yanco_products_per_page_selectbox', 25 );
-function flipmart_yanco_products_per_page_selectbox() {
-    $html = '';
-    
-    $style = 'font-size: 16px;
-    font-weight: 300;
-    font-family: inherit;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    width: 289px;
-    text-align: right;
-    background-color: #355477;
-    color: white;';
-
-    $per_page = filter_input( INPUT_GET, 'perpage', FILTER_SANITIZE_NUMBER_INT );     
-
-    $orderby_options = array(
-        '12' => '12 produkter per side',
-        '20' => '20 produkter per side',
-        '40' => '40 produkter per side',
-        '64' => '64 produkter per side',
-    );
-
-    $html .= '<div class="woocommerce-perpage" style="text-align: right;">';
-        $html .=  '<select style="' . $style . '" onchange="if (this.value) window.location.href=this.value">';       
-            foreach( $orderby_options as $value => $label ) {
-
-                $per_page_value = '';
-                
-                if ( isset( $_GET['orderby'] ) ) {
-                    $per_page_value = $value . '&orderby=' . $_GET['orderby'];
-                } else {
-                    $per_page_value = $value;
-                }
-                
-                $html .= '<option ' . selected( $per_page, $value ) . ' value="?perpage=' . $per_page_value . '#main-archive-products">' . $label. '</option>';                
-                
+function flipmart_wphelper_woocommerce_get_catalog_ordering_args() {
+    ?>
+    <form method="get" class="fld inline">
+        <label>Sort by </label>
+        <select name="orderby" onchange="this.form.submit()">
+            <?php
+            $options = array(
+                'menu_order' => 'Default sorting',
+                'popularity' => 'Sort by popularity',
+                'rating'     => 'Sort by average rating',
+                'date'       => 'Sort by newness',
+                'price'      => 'Sort by price: low to high',
+                'price-desc' => 'Sort by price: high to low',
+            );
+            $current_orderby = isset($_GET['orderby']) ? $_GET['orderby'] : 'menu_order';
+            foreach ( $options as $value => $label ) {
+                echo '<option value="'.$value.'" '.selected($current_orderby, $value, false).'>'.$label.'</option>';
             }
-        $html .= '</select>';
-    $html .= '</div>';
+            ?>
+        </select>
 
-    echo $html;
+        <?php
+        // keep other filters (per_page, category, search, etc)
+        foreach ( $_GET as $key => $value ) {
+            if ( 'orderby' === $key ) continue;
+            echo '<input type="hidden" name="'.esc_attr($key).'" value="'.esc_attr($value).'">';
+        }
+        ?>
+    </form>
+    <?php
 }
-
-add_action( 'pre_get_posts', 'yanco_products_per_page_pre_get_posts', 200 );
-function yanco_products_per_page_pre_get_posts( $query ) {
-    $per_page = filter_input( INPUT_GET, 'perpage', FILTER_SANITIZE_NUMBER_INT );     
-    
-    if( $query->is_main_query() && !is_admin() && is_product_category() ) {
-        $query->set( 'posts_per_page', $per_page );
-    }
-}
-
