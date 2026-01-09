@@ -81,3 +81,9 @@ label {
     font-weight: 300;
 }
 
+
+
+
+select {
+    width: 100px;
+}
