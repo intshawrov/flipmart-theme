@@ -242,3 +242,17 @@ function flipmart_wc_loop_shop_view_mode() {
     </div>
     <?php
 }
+
+// Creat shortcode
+
+function(){?>
+
+
+Fatema Ritu
+
+
+
+<?php
+}
+
+add_shortcode('cloth', 'our_storef');
