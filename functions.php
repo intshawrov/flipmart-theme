@@ -47,6 +47,30 @@ function flipmart_theme_setup(){
                   'caption',
             )
       );
+      add_theme_support('starter-content',
+            array(
+                  'widgets' => array(
+                        'sidebar-1' => array(
+                              'text_business_info',
+                              'search',
+                              'text_about',
+                        ),
+                  ),
+                  'posts' => array(
+                        'home',
+                        'about' => array(
+                              'post_type' => 'page',
+                              'post_title' => __('About Us', 'flipmart'),
+                              'post_content' => __('This is the about page', 'flipmart'),
+                        ),
+                  ),
+                  'options' => array(
+                        'show_on_front' => 'page',
+                        'page_on_front' => '{{home}}',
+                        'page_for_posts' => '{{blog}}',
+                  ),
+            )
+      );
       register_nav_menus(
             array(
                   'primary' => __('Primary Menu', 'flipmart'),
@@ -245,16 +269,16 @@ function flipmart_wc_loop_shop_view_mode() {
 
 // Creat shortcode
 
-function(){?>
+// function(){?>
 
 
-<div class="our-store">
-    <h2>Our Store</h2>
-    <p>Welcome to our clothing store! We offer a wide range of fashionable and high-quality apparel for all occasions. Whether you're looking for casual wear, formal attire, or trendy accessories, we've got you covered. Our collection features the latest styles and designs to keep you looking your best. Shop with us today and experience exceptional customer service and unbeatable prices!</p>
+<!-- // <div class="our-store">
+//     <h2>Our Store</h2>
+//     <p>Welcome to our clothing store! We offer a wide range of fashionable and high-quality apparel for all occasions. Whether you're looking for casual wear, formal attire, or trendy accessories, we've got you covered. Our collection features the latest styles and designs to keep you looking your best. Shop with us today and experience exceptional customer service and unbeatable prices!</p> -->
 
 
 
-<?php
-}
+// <?php
+// }
 
-add_shortcode('cloth', 'our_storef');
+// add_shortcode('cloth', 'our_storef');
