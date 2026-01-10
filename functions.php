@@ -267,18 +267,3 @@ function flipmart_wc_loop_shop_view_mode() {
     <?php
 }
 
-// Creat shortcode
-
-// function(){?>
-
-
-<!-- // <div class="our-store">
-//     <h2>Our Store</h2>
-//     <p>Welcome to our clothing store! We offer a wide range of fashionable and high-quality apparel for all occasions. Whether you're looking for casual wear, formal attire, or trendy accessories, we've got you covered. Our collection features the latest styles and designs to keep you looking your best. Shop with us today and experience exceptional customer service and unbeatable prices!</p> -->
-
-
-
-// <?php
-// }
-
-// add_shortcode('cloth', 'our_storef');
