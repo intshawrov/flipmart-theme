@@ -268,7 +268,7 @@ function flipmart_wc_loop_shop_view_mode() {
 }
 
 
-function  flipmart_wc_loop_shop_view_mode_shortcode(){ ?>
+function  flipmart_wc_loop_shop_view_mode(){ ?>
 
 
     <div class="shop-view-mode">
