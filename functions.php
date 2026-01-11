@@ -283,8 +283,7 @@ function  flipmart_wc_loop_shop_view_mode(){ ?>
            class="list-view <?php echo ( $current_view === 'list' ) ? 'active' : ''; ?>">
             <i class="fa-solid fa-table-list"></i>
             <span>List</span>
-        </a>
-
+        </a>                                                 
     </div>
 
 
