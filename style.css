@@ -87,3 +87,10 @@ label {
 select {
     width: 100px;
 }
+
+body.wcotr-closed .elementor-menu-cart__toggle,
+body.wcotr-closed .elementor-widget-woocommerce-menu-cart,
+body.wcotr-closed .wc-block-mini-cart,
+body.wcotr-closed a.cart-contents {
+  display: none !important;
+}
