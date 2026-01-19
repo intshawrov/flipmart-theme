@@ -59,6 +59,16 @@ get_header( 'shop' ); ?>
 
 	<?php do_action( 'woocommerce_sidebar' ); ?>
 
+	<div class='col-md-9'>
+			<div class="clearfix filters-container m-t-10">
+
+			</div>
+			</div>
+
+		</div>
+	</div>
+</div>
+
 <?php
 get_footer( 'shop' );
 
