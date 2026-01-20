@@ -1,7 +1,8 @@
 <?php 
 
 function  flipmart_theme_styles(){
-      //css files
+
+      // CSS Enqueue
       wp_enqueue_style('bootstrap-css', get_template_directory_uri() . '/assets/css/bootstrap.min.css', array(), '1.0.0', 'all');
       wp_enqueue_style('main-css', get_template_directory_uri() . '/assets/css/main.css', array(), '1.0.0', 'all');
       wp_enqueue_style('blue-css', get_template_directory_uri() . '/assets/css/blue.css', array(), '1.0.0', 'all');
@@ -27,9 +28,10 @@ function  flipmart_theme_styles(){
 
 add_action('wp_enqueue_scripts', 'flipmart_theme_styles');
 
-add_action('after_setup_theme', 'flipmart_theme_setup');
 
 function flipmart_theme_setup(){
+
+    // Add all theme support
 
       add_theme_support('title-tag');
       add_theme_support('custom-logo');
@@ -78,6 +80,8 @@ function flipmart_theme_setup(){
             )
       );
 }
+
+add_action('after_setup_theme', 'flipmart_theme_setup');
 
 /**
  * Change number or products per row to 3
