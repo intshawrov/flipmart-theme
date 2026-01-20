@@ -29,7 +29,7 @@ get_header( 'shop' ); ?>
 
 <div class="body-content outer-top-xs" id="top-banner-and-menu">
 	<div class="container">
-	<div class="row">
+	<div class="row single-product">
 
 	
 	<?php do_action( 'woocommerce_sidebar' ); ?>

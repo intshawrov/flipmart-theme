@@ -102,3 +102,12 @@ body.wcotr-closed a.cart-contents {
 .woocommerce #content div.product div.summary,.woocommerce div.product div.summary,.woocommerce-page #content div.product div.summary,.woocommerce-page div.product div.summary {
     width: 57%;
 }
+
+.woocommerce div.product div.images img {
+    border: 1px solid #00BCD4;
+}
+
+.woocommerce div.product div.images img {
+    border: 1px solid gray;
+
+}
