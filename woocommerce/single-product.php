@@ -31,6 +31,14 @@ get_header( 'shop' ); ?>
 	<div class="container">
 	<div class="row">
 
+	
+	<?php do_action( 'woocommerce_sidebar' ); ?>
+
+	<div class='col-md-9'>
+			<div class="clearfix filters-container m-t-10">
+
+			
+
 	<?php
 		/**
 		 * woocommerce_before_main_content hook.
@@ -57,14 +65,8 @@ get_header( 'shop' ); ?>
 		do_action( 'woocommerce_after_main_content' );
 	?>
 
-	<?php do_action( 'woocommerce_sidebar' ); ?>
-
-	<div class='col-md-9'>
-			<div class="clearfix filters-container m-t-10">
-
+				</div>
 			</div>
-			</div>
-
 		</div>
 	</div>
 </div>
